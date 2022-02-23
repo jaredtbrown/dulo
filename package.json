@@ -15,7 +15,6 @@
   "devDependencies": {
     "@parcel/packager-ts": "2.3.2",
     "@parcel/transformer-typescript-types": "2.3.2",
-    "jest": "^27.5.1",
     "parcel": "^2.3.2",
     "ts-node": "^10.5.0",
     "typescript": ">=3.0.0"
