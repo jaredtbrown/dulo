@@ -1,12 +1,13 @@
 {
-  "name": "dulo",
-  "version": "0.1.0",
+  "name": "@jaredtbrown/dulo",
+  "version": "0.1.0-beta",
   "description": "A library for creating microfrontends",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "author": "Jared Brown <brown.jared25@gmail.com>",
+  "repository": "git://github.com/jaredtbrown/dulo",
   "license": "MIT",
   "scripts": {
     "watch": "parcel watch src/index.ts",
