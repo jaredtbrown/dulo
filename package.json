@@ -9,7 +9,7 @@
   "author": "Jared Brown <brown.jared25@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "parcel watch",
+    "watch": "parcel watch src/index.ts",
     "build": "parcel build src/index.ts"
   },
   "devDependencies": {
