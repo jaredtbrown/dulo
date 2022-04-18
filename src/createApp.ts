@@ -1,7 +1,7 @@
 import { createRenderFunctionName } from "./createRenderFunctionName";
-import { CreateAppParams } from "./types";
+import { CreateVanillaAppParams } from "./types";
 
-export function createApp(params: CreateAppParams): void {
+export function createApp(params: CreateVanillaAppParams): void {
   const renderFunctionName = createRenderFunctionName(params.name);
   window[renderFunctionName] = () => {
     const {view, props} = params.component;
