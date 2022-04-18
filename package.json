@@ -1,6 +1,6 @@
 {
   "name": "@jaredtbrown/dulo",
-  "version": "0.1.4-beta",
+  "version": "0.1.5-beta",
   "description": "A library for creating microfrontends",
   "source": "src/index.ts",
   "main": "dist/main.js",
