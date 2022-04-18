@@ -1,12 +1,12 @@
 import ReactDOM from 'react-dom';
 import { createRenderFunctionName } from './createRenderFunctionName';
 
-import { CreateReactAppParams } from "./types";
+import { CreateAppParams } from "./types";
 
-export function createReactApp(params: CreateReactAppParams): void {
+export function createReactApp(params: CreateAppParams): void {
   const renderFunctionName = createRenderFunctionName(params.name);
-  window[renderFunctionName] = () => {
-    const { component: Component } = params;
-    ReactDOM.render(<Component />, document.getElementById(params.rootElementId));
+  window[renderFunctionName] = (rootElementId: string, props?: { [key: string]: any }) => {
+    const { component } = params;
+    ReactDOM.render(component(props), document.getElementById(rootElementId));
   }
 }
