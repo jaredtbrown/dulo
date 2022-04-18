@@ -4,12 +4,9 @@ interface CreateAppParams {
 }
 
 export interface CreateVanillaAppParams extends CreateAppParams {
-  component: {
-    view: Function;
-    props: {
-      [key: string]: any;
-    }
-  }
+  component: (props?: {
+    [key: string]: any
+  }) => HTMLElement
 }
 
 export interface CreateReactAppParams extends CreateAppParams {
